@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="score">
+            <div id="gamename">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div id="score_div">
+                <div class="scorebox" id="cscore">
+                    <p>COMPUTER <br>SCORE</p>
+                    <b id="comscore" class="score_number">0</b>
+                </div>
+                <div class="scorebox" id="mscore">
+                    <p>YOUR <br>SCORE</p>
+                    <b id="userscore" class="score_number">0</b>
+                </div>
+                <div>
+                    <button class="resetbutton" onclick="resetgame()">Reset Game</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result_container">
+            <div>
+                <p class="headingcenter">YOU PICKED</p>
+                <div id="userfirstcircle" >
+                    <div id="usermiddlecircle">
+                        <div id="firstcontainer" class="gamenode">
+                            <div class="whitecontainer">
+                                <div class="imagecontainer">
+                                    <img src="./rock.png" id="first_image" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <div class="winner_show">
+                    <h1 id="who">L</h1>
+                    <!-- <h1 onclick="console.log('hi')">AGAINST</h1> -->
+                  <a href="index.html"> <button id="playagain_button">PLAY AGAIN</button></a>
+                  
+                </div>
+            </div>
+
+            <div>
+                <P class="headingcenter">PC PICKED</P>
+                <div id="comfirstcircle" >
+                    <div id="comsecondcircle">
+
+                        <div id="secondcontainer" class="gamenode">
+                            <div class="whitecontainer">
+                                <div class="imagecontainer">
+                                    <img src="./scissor.png" id="second_image" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+        <div id="rmaincontainer">
+            <div id="rcon">
+                <div id="rcontainer" class="rule_container">
+                    <img src="./rules1.png" alt="">
+                    <div class="crossbtn" onclick="hiderule()">
+                      
+                        <img src="./X.png" alt="">
+            
+                    </div>
+                </div>
+            </div>
+            <div class="ruletxt" onclick="hiderule()">
+                <!-- <a href="index2.html"><button>NEXT</button></a> -->
+                <h3>RULES</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script defer src="script1.js"></script>
+</body>
+
+</html>

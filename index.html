@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="score">
+            <div id="gamename">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div  id="score_div">
+                <div class="scorebox" id="cscore">
+                    <p>COMPUTER <br>SCORE</p>
+                    <b id="comscore" class="score_number">0</b>
+                </div>
+                <div class="scorebox" id="mscore">
+                    <p>YOUR <br>SCORE</p>
+                    <b id="userscore" class="score_number">0</b>
+                </div>
+                <div>
+                    <button class="resetbutton" onclick="resetgame()">Reset Game</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game_container">
+            <div>
+
+                <div class="twoimagecontainer">
+                    <div id="0" class="bluecontainer gamenode">
+                            <div class="whitecontainer">
+                                <div class="imagecontainer">
+                                    <a href="./index1.html"><img src="./rock.png" alt=""></a>
+                                </div>
+                            </div>
+                    </div>
+                        <div id="line_container">
+                            <div id="center_line"></div>
+                        </div>
+                        <div id="2" class="bluecontainer gamenode" style="background-color: violet;">
+                            <div class="whitecontainer">
+                                <div class="imagecontainer">
+                                    <a href="./index1.html"><img src="./scissor.png" alt=""></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="twolines_container">
+                        <div class="firstline"></div>
+                    <div class="secondline"></div>
+                </div>
+                <div class="oneimageContainer">
+                    <div id="1" class="bluecontainer gamenode" style="background-color: orangered;">
+                        <div class="whitecontainer">
+                            <div class="imagecontainer">
+                               <a href="./index1.html"> <img src="./paper.png" alt=""></a>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div id="rcontainer" class="rule_container">
+                <img src="./rules1.png" alt="">
+                <div class="crossbtn" onclick="hiderule()">
+                    <!-- <img src="./crosscontainer.png" alt=""> -->
+                    <img src="./X.png" alt="">
+        
+                </div>
+            </div>
+        </div>
+        <div class="ruletxt" onclick="hiderule()">
+            <h3>RULES</h3>
+        </div>
+    </div>
+    <!-- </div> -->
+    <script src="script.js"></script>
+</body>
+</html>
